@@ -30,10 +30,23 @@ Controls
 - Automatic "Best Move": If the game detects 60 seconds of inactivity, it will automatically calculate and execute the move that clears the most space on the board.
 - Dynamic Coloring: Every tile value has a unique color pair for better visibility.
 
+![Game](Images/1.png)
+![Game](Images/2.png)
+![Game](Images/3.png)
+![Game](Images/4.png)
+![Game](Images/5.png)
+![Game](Images/6.png)
+![Game](Images/7.png)
+![Game](Images/8.png)
+
 ## Leaderboard & Scoring
 When you win or lose, you can save your legacy. The game maintains a highscores.txt file and displays the Top 5 players.
 - Enter your name after a "Game Over" to save your score.
 - The system automatically sorts scores so only the best appear on the leaderboard.
+
+![Game](Images/9.png)
+![Game](Images/10.png)
+![Game](Images/11.png)
 
 ## Technical Overview
 The program is organized into specialized sub-programs to handle game state and rendering:
