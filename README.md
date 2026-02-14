@@ -1,3 +1,54 @@
+# 2048
+A classic 2048 game clone developed in C using the ncurses library for a terminal-based graphical user interface. This project was created as part of the Computer Programming series (CC).
+
+## Prerequisites
+To run this game, you need the ncurses library installed on your system.
+- *Debian/Ubuntu:* `sudo apt-get install libncurses5-dev libncursesw5-dev`
+
+## Build and Run
+Maximize your terminal window before running the game to ensure the board renders correctly. Use the provided Makefile to compile and execute:
+`make`
+
+`make run`
+
+`make clean`
+
+## Gameplay & Controls
+The goal is to slide numbered tiles on a grid to combine them to create a tile with the number 2048.
+
+Controls
+|Key|Action|
+|W|Move Tiles Up|
+|S |Move Tiles Down|
+|A|Move Tiles Left |
+|D |Move Tiles Right|
+|H|Open Help/Commands Menu |
+|Q|Quit to Menu|
+
+## Special Features
+- Resume System: If you exit to the menu without closing the app, you can pick up exactly where you left off.
+- Automatic "Best Move": If the game detects 60 seconds of inactivity, it will automatically calculate and execute the move that clears the most space on the board.
+- Dynamic Coloring: Every tile value has a unique color pair for better visibility.
+
+## Leaderboard & Scoring
+When you win or lose, you can save your legacy. The game maintains a highscores.txt file and displays the Top 5 players.
+- Enter your name after a "Game Over" to save your score.
+- The system automatically sorts scores so only the best appear on the leaderboard.
+
+## Technical Overview
+The program is organized into specialized sub-programs to handle game state and rendering:
+Core Logic
+- newGame / drawBoard: Handles the main game loop and initial grid rendering.
+- endGame / winGame: Logic checks for available moves or the reaching of the 2048 tile.
+- bestMove: An algorithm that simulates all four directions to find the move resulting in the most empty cells.
+Data Management
+- copy / isSameBoard: Utilities to track board changes and validate if a move is legal.
+- saveHighscores / sortScores: Handles binary/text file I/O to maintain the persistent leaderboard.
+
+
+
+
+Varianta in romana (2023)
 =================================== 2048 ===================================
 
 Instructiuni (!!important!!):
