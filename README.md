@@ -48,7 +48,8 @@ Data Management
 
 
 
-Varianta in romana (2023)
+### Varianta in romana (2023)
+
 =================================== 2048 ===================================
 
 Instructiuni (!!important!!):
